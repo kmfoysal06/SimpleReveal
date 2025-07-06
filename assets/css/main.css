@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+/* lora-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lora-v36-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/lora-v36-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+body {
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    background-color: #f6f6f6;
+}
+.container {
+    max-inline-size: 1080px;
+    margin: 0 auto;
+    header {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #f8f8f8;
+        nav ul{
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+        a.logo {
+            font-size: 20px;
+        }
+        .images {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 0.5rem;
+        }
+    }
+    .section {
+        min-height: 80vh;
+        min-height: 80dvh;
+        display: grid;
+        place-content: center;
+    }
+    .my-default {
+        margin-block: 0.8rem;
+    }
+    footer {
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.8rem;
+        color: #666;
+        background-color: #f8f8f8;
+    }
+}
+
+
+
+

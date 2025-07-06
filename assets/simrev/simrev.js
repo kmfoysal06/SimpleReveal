@@ -18,7 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         })
     });
+    /**
+     * slide from bottom to up
+     */
     const slideUpElements = document.querySelectorAll('.simrev-up');
+    /**
+     * slide from up to bottm
+     */
+    const slideDownElements = document.querySelectorAll('.simrev-down');
     /**
      * slide from right
      */
@@ -32,11 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     const slideRightDelaysElements = document.querySelectorAll('.simrev-right-delay');
     /**
-     * slide from bottom to pup with delays
+     * slide from bottom to up with delays
      */
     const slideUpDelaysElements = document.querySelectorAll('.simrev-up-delay');
 
     slideUpElements.forEach((el) => {
+        simrevObserver.observe(el);
+    });
+    slideDownElements.forEach((el) => {
         simrevObserver.observe(el);
     });
     slideRightElements.forEach((el) => {

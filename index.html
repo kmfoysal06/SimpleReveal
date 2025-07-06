@@ -1,98 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/simrev/simrev.css">
+    <link rel="stylesheet" href="assets/css/prism.css">
 </head>
+
 <body>
     <div class="container">
         <header>
-            <a href="/">Container</a>
+            <a href="/" class="logo">SimpleReveal</a>
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="#">Source</a></li>
+                    <li><a href="http://blog.kmfoysal06.com">Blog</a></li>
+                    <li><a href="https://github.com/kmfoysal06/simpleReveal/">Source</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <div class="hero section simrev-up">
-                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, mollitia.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium ipsum laboriosam doloremque, eaque dignissimos quam assumenda nesciunt illum delectus provident sunt. Fugit eligendi dolore, provident odit esse nobis est consequuntur distinctio odio iusto expedita ea aliquam, quaerat sapiente autem.</p>
+                <h2>Welcome to SimpleReveal.</h2>
+                <p class="my-default">A simple ScrollReveal or AOS alternative to implement simple section or element reveal on scroll. The
+                    functionality used javascript intersectionObserver API to check weather the section or element is
+                    visible on user screen or not. Just include simrev.css and simrev.js to your html and add
+                    `simrev-up`, `simrev-down`, `simrev-right`, `simrev-left`, `simrev-up-delay`, `simrev-right-delay`
+                    etc. classes to controll how your element revealed on scroll.</p>
             </div>
+            <div class="guide section">
+                <h2>Usage:</h2>
+                <p class="my-default">To use SimpleReveal, you need to include the simrev.css and simrev.js files in your HTML. You can
+                    then add the following classes to your elements:</p>
+                <ul>
+                    <li class="simrev-up-delay" style="--delay:10ms;"><code>simrev-up</code> - Reveals the element from the bottom to the top.</li>
+                    <li class="simrev-up-delay" style="--delay:20ms;"><code>simrev-down</code> - Reveals the element from the top to the bottom.</li>
+                    <li class="simrev-up-delay" style="--delay:30ms;"><code>simrev-right</code> - Reveals the element from the left to the right.</li>
+                    <li class="simrev-up-delay" style="--delay:40ms;"><code>simrev-left</code> - Reveals the element from the right to the left.</li>
+                    <li class="simrev-up-delay" style="--delay:50ms;"> class="simrev-up-delay" style="--delay:400ms;<sdfsdafscode>simrev-up-delay</code> - similar to `simrev-up` but you can add delay before the element
+                        reveal by adding custom property 'delay' to the element you added `simrev-up-delay` (see example
+                        at the ending and see how you can use it to make interesting animation in the next section.) .
+                    </li>
+                    <li class="simrev-up-delay" style="--delay: 60ms;"><code>simrev-right-delay</code> - similar to `simrev-right` but you can add delay before the
+                        element reveal by adding custom property 'delay' to the element you added `simrev-right-delay` .
+                    </li>
+            </div>
+            <div class="section simrev-up">
+                <h2>`simrev-up` example:</h2>
+                <p class="my-default">`simrev-up` animation will look like this.</p>
+                <p>lorem ipsum dollar isset amet consectetur adipisicing elit. Quisquam, voluptatum. lorem ipsum dollar
+                    isset amet consectetur adipisicing elit. Quisquam, voluptatum. lorem ipsum dollar isset amet
+                    consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+            <div class="section simrev-down">
+                <h2>`simrev-down` example:</h2>
+                <p class="my-default">`simrev-down` animation will look like this.</p>
+                <p>lorem ipsum dollar isset amet consectetur adipisicing elit. Quisquam, voluptatum. lorem ipsum dollar
+                    isset amet consectetur adipisicing elit. Quisquam, voluptatum. lorem ipsum dollar isset amet
+                    consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+            <div class="section simrev-right">
+                <h2>`simrev-right` example:</h2>
+                <p class="my-default">`simrev-right` animation will look like this.</p>
+                <p>lorem ipsum dollar isset amet consectetur adipisicing elit. Quisquam, voluptatum. lorem ipsum dollar
+                    isset amet consectetur adipisicing elit. Quisquam, voluptatum. lorem ipsum dollar isset amet
+                    consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+            <div class="conclusion section simrev-left">
+                <h2>`simrev-left` example:</h2>
+                <p class="my-default">This section itself is a example of `simrev-left`. you added `simrev-left` in your element. you get
+                    this scroll reveal animation.</p>
+                <div class="simrev-left-example-img">
+                    <img src="assets/images/default-thumbnail.webp" width="200px">
+                    <img src="assets/images/default-thumbnail.webp" width="200px">
+                </div>
+            </div>
+
+
             <div class="products section">
-                <h2>Products</h2>
-                <div class="images">
-                    <img class="simrev-up-delay" style="--delay:100ms;" src="default-thumbnail.webp" width="200px" />
-                    <img class="simrev-up-delay" style="--delay:200ms;" src="default-thumbnail.webp" width="200px" />
-                    <img class="simrev-up-delay" style="--delay:300ms;" src="default-thumbnail.webp" width="200px" />
-                    <img class="simrev-up-delay" style="--delay:400ms;" src="default-thumbnail.webp" width="200px" />
+                <h2>`simrev-up-delay` Example</h2>
+                <div class="images class="my-default"">
+                    <img class="simrev-up-delay" style="--delay:100ms;" src="assets/images/default-thumbnail.webp" width="200px" />
+                    <img class="simrev-up-delay" style="--delay:200ms;" src="assets/images/default-thumbnail.webp" width="200px" />
+                    <img class="simrev-up-delay" style="--delay:300ms;" src="assets/images/default-thumbnail.webp" width="200px" />
+                    <img class="simrev-up-delay" style="--delay:400ms;" src="assets/images/default-thumbnail.webp" width="200px" />
                 </div>
             </div>
             <div class="about section">
-                <div class="part simrev-right" style="--delay:100ms;">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, placeat!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus numquam iusto architecto quas autem sapiente ipsa id facilis, libero sequi alias aliquam, optio tempora, voluptatibus eius iste maxime possimus. Ex necessitatibus ipsam commodi officiis molestiae suscipit placeat quo enim!</p>
+                <div class="part simrev-right-delay" style="--delay:100ms;">
+                    <h2>`simrev-right-delay` example:</h2>
+                    <p class="my-default">This is a basic example of how the use of `simrev-right-delay` could be used to make interesting
+                        animate on scroll reveal.</p>
                 </div>
-                <div class="part simrev-right" style="--delay:200ms;">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, placeat!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus numquam iusto architecto quas autem sapiente ipsa id facilis, libero sequi alias aliquam, optio tempora, voluptatibus eius iste maxime possimus. Ex necessitatibus ipsam commodi officiis molestiae suscipit placeat quo enim!</p>
+                <div class="part-container">
+                    <div class="part simrev-right-delay" style="--delay:200ms;">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, placeat!</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus numquam iusto
+                            architecto quas autem sapiente ipsa id facilis, libero sequi alias aliquam, optio tempora,
+                            voluptatibus eius iste maxime possimus. Ex necessitatibus ipsam commodi officiis molestiae
+                            suscipit placeat quo enim!</p>
+                    </div>
+                    <div class="part simrev-right-delay" style="--delay:300ms;">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, placeat!</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus numquam iusto
+                            architecto quas autem sapiente ipsa id facilis, libero sequi alias aliquam, optio tempora,
+                            voluptatibus eius iste maxime possimus. Ex necessitatibus ipsam commodi officiis molestiae
+                            suscipit placeat quo enim!</p>
+                    </div>
+                    <div class="part simrev-right-delay" style="--delay:400ms;">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, placeat!</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus numquam iusto
+                            architecto quas autem sapiente ipsa id facilis, libero sequi alias aliquam, optio tempora,
+                            voluptatibus eius iste maxime possimus. Ex necessitatibus ipsam commodi officiis molestiae
+                            suscipit placeat quo enim!</p>
+                    </div>
+                    <div class="part simrev-right-delay" style="--delay:400ms;">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, placeat!</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus numquam iusto
+                            architecto quas autem sapiente ipsa id facilis, libero sequi alias aliquam, optio tempora,
+                            voluptatibus eius iste maxime possimus. Ex necessitatibus ipsam commodi officiis molestiae
+                            suscipit placeat quo enim!</p>
+                    </div>
+
+
                 </div>
-                <div class="part simrev-right" style="--delay:300ms;">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, placeat!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus numquam iusto architecto quas autem sapiente ipsa id facilis, libero sequi alias aliquam, optio tempora, voluptatibus eius iste maxime possimus. Ex necessitatibus ipsam commodi officiis molestiae suscipit placeat quo enim!</p>
-                </div>
-                <div class="part simrev-right" style="--delay:400ms;">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, placeat!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus numquam iusto architecto quas autem sapiente ipsa id facilis, libero sequi alias aliquam, optio tempora, voluptatibus eius iste maxime possimus. Ex necessitatibus ipsam commodi officiis molestiae suscipit placeat quo enim!</p>
-                </div>
-            </div>
-            <div class="conclusion section simrev-left">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ab nihil quo suscipit necessitatibus repellat eaque repudiandae unde obcaecati rem quia tempora non laborum laudantium doloremque quasi, quas voluptates? Velit.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, cum facere adipisci nisi fuga soluta? Inventore, sed temporibus dicta odio soluta expedita necessitatibus voluptate iste laboriosam fuga ex quasi. Ab at consequuntur facilis cumque aperiam, iusto quaerat quod deleniti cupiditate eligendi sint eos doloremque laborum modi accusamus eaque rem! Animi?</p>
-                <img src="default-thumbnail.webp" width="200px">
-                <img src="default-thumbnail.webp" width="200px">
-            </div>
-            <div class="end section simrev-left">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ab nihil quo suscipit necessitatibus repellat eaque repudiandae unde obcaecati rem quia tempora non laborum laudantium doloremque quasi, quas voluptates? Velit.</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, cum facere adipisci nisi fuga soluta? Inventore, sed temporibus dicta odio soluta expedita necessitatibus voluptate iste laboriosam fuga ex quasi. Ab at consequuntur facilis cumque aperiam, iusto quaerat quod deleniti cupiditate eligendi sint eos doloremque laborum modi accusamus eaque rem! Animi?</p>
             </div>
             <div class="example section simrev-up">
                 <h2>Example:-</h2>
-                <pre>
-                    <code class="language-javascript">
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang=&quot;en&quot;&gt;
-                        &lt;head&gt;
-                            &lt;meta charset=&quot;UTF-8&quot;&gt;
-                            &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-                            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-                            &lt;title&gt;SimRev Demo&lt;/title&gt;
-                            &lt;link rel=&quot;stylesheet&quot; href=&quot;simrev.css&quot;&gt;
-                        &lt;/head&gt;
-                        &lt;body&gt;
-                            &lt;div class=&quot;container&quot;&gt;
-                                &lt;h1&gt;Hello&lt;/h1&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&quot;container&quot;&gt;
-                                &lt;h1&gt;Hello 1&lt;/h1&gt;
-                            &lt;/div&gt;
-                            &lt;div class=&quot;container&quot;&gt;
-                                &lt;h1&gt;Hello 2&lt;/h1&gt;
-                            &lt;/div&gt;
-                            &lt;script src=&quot;simrev.js&quot;&gt;&lt;/script&gt;
-                        &lt;/body&gt;
-                        &lt;/html&gt;
-                    </code>
-                </pre>
+                <pre><code class="language-javascript">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;SimRev Demo&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;simrev.css&quot;&gt;
+    &lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- make sure containers to get full or enough
+        height so you can visualize the scroll reveal effect --&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h1&gt;Hello&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h1&gt;Hello 1&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h1&gt;Hello 2&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;script src=&quot;simrev.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
             </div>
         </main>
+    <footer>
+        <p>by <a href="https://github.com/kmfoysal06/">kmfoysal06</a></p>
+        <p>© 2025 SimpleReveal</p>
+    </footer>
     </div>
-    <script src="app.js"></script>
-    <script src="prism.js"></script>
+    <script src="assets/simrev/simrev.js"></script>
+    <script src="assets/js/prism.js"></script>
 </body>
+
 </html>
