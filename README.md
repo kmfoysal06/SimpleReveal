@@ -1,5 +1,5 @@
-# ScrollReveal
-open [ScrollReveal Doc](https://kmfoysal06.github.io/scrollReveal/) to see the demo.
+# SimpleReveal
+open [SimpleReveal Doc](https://kmfoysal06.github.io/SimpleReveal/) to see the demo.
 
 # About
-ScrollReveal is a JavaScript library that allows you to easily add scroll animations to your web pages. It provides a simple API to create animations that trigger when elements come into view as the user scrolls.
+SimpleReveal is a JavaScript library that allows you to easily add scroll animations to your web pages. It provides a utility classes to add to you html markup so they can be animated on scroll.
